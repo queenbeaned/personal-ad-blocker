@@ -1,0 +1,224 @@
+! Title: David's Organized DNS-Wide Custom Filter List
+! Description: Non-device-specific version of David's organized custom DNS filtering rules.
+! Last updated: 2026-06-19
+! Notes: Device-specific $client rules were converted to global $important rules for DNS servers that do not support per-client filtering.
+
+! ============================================================
+! Device Rules Converted to Global Blocks
+! ============================================================
+
+! Alexa / Amazon rules originally scoped to Echo Show, now applied globally.
+||m.media-amazon.com^$important
+!||amc.amazon.dev^$important
+||advertising.amazon.dev^$important
+||juno.alexa.amazon.dev^$important
+
+! Amazon / Alexa Core Blocks
+||minerva.devices.a2z.com^$important
+||msh.amazon.com^$important
+||softwareupdates.amazon.com^$important
+
+
+! ============================================================
+! Critical Allowlist / Connectivity
+! ============================================================
+
+@@||torproject.org^$important
+@@||nordcdn.com^$important
+@@||nordaccount.com^$important
+@@||nordvpn.com^$important
+@@||mullvad.net^$important
+@@||nextdns.io^$important
+@@||quad9.net^$important
+@@||unfiltered.adguard-dns.com^$important
+@@||cloudflare-dns.com^$important
+@@||1.1.1.1^$important
+@@||9.9.9.9^$important
+@@||94.140.14.14^$important
+@@||obfusgated.com^$important
+@@||adblock.turtlecute.org^$important
+
+
+! ============================================================
+! Apple Services Allowlist - Apple Products
+! ============================================================
+
+! Apple DNS / Private Relay / Network Plumbing
+@@||doh-dns-apple-com.v.aaplimg.com^$important
+@@||partiality.itunes.apple.com^$important
+@@||mask-api.icloud.com^$important
+@@||mask.apple-dns.net^$important
+@@||mask-t.apple-dns.net^$important
+@@||mask-api.fe.apple-dns.net^$important
+@@||doh.dns.apple.com^$important
+@@||apple-relay.cloudflare.com^$important
+@@||apple-dns.net^$important
+
+! Apple Push / iMessage / iCloud / Identity
+@@||push.apple.com^$important
+@@||courier.push.apple.com^$important
+@@||gateway.icloud.com^$important
+@@||ess.apple.com^$important
+@@||identity.apple.com^$important
+@@||guzzoni.apple.com^$important
+@@||idms-apple.com^$important
+@@||gsas.apple.com^$important
+
+
+! ============================================================
+! General Privacy / Tracking Blocks
+! ============================================================
+
+||blackcrow.ai^$important
+||appsflyersdk.com^$important
+||appsflyer.com^$important
+||adjust.com^$important
+||app-measurement.com^$important
+||app-analytics-services.com^$important
+||pricespider.com^$important
+||klaviyo.com^$important
+||userway.org^$important
+||gravatar.com^$important
+||secure.gravatar.com^$important
+||yotpo.com^$important
+||assertcom.de^$important
+||shop.pe^$important
+||shopify.com^$important
+||bnc.lt^$important
+||singular.net^$important
+||ngfts.lge.com^$important
+||zenaps.com^$important
+||impact.com^$important
+||trackcmp.net^$important
+||2giga.link^$important
+||greatis.com^$important
+
+
+! ============================================================
+! Social / Platform Tracking
+! ============================================================
+
+! Meta / Facebook / Instagram
+||facebook.com^$important
+||fbcdn.net^$important
+||facebook.net^$important
+||fbsbx.com^$important
+||tfbnw.net^$important
+||instagram.com^$important
+||cdninstagram.com^$important
+||i.instagram.com^$important
+
+! X / Twitter
+||analytics.x.com^$important
+||analytics.twitter.com^$important
+
+! Pinterest / LinkedIn / VK
+||analytics.pinterest.com^$important
+||prod.pinterest.global.map.fastly.net^$important
+||licdn.com^$important
+||vk.com^$important
+||vk-ads.com^$important
+
+
+! ============================================================
+! Affiliate / Referral Tracking
+! ============================================================
+
+||awin1.com^$important
+||linksynergy.com^$important
+||clk.tradedoubler.com^$important
+||shareasale.com^$important
+||anrdoezrs.net^$important
+||emjcd.com^$important
+||webgains.com^$important
+||prf.hn^$important
+||dpbolvw.net^$important
+||skimresources.com^$important
+||viglink.com^$important
+
+
+! ============================================================
+! Cookie Consent / Privacy Management
+! ============================================================
+
+||cdn.cookielaw.org^$important
+||cookielaw.org^$important
+||cookie-cdn.cookiepro.com^$important
+||geolocation.onetrust.com^$important
+||onetrust.com^$important
+||consent.cookiebot.com^$important
+||consentcdn.cookiebot.com^$important
+||cookiebot.com^$important
+||consent.trustarc.com^$important
+||trustarc.com^$important
+||sdk.privacy-center.org^$important
+||privacy-center.org^$important
+||cdn.privacy-mgmt.com^$important
+||privacy-mgmt.com^$important
+||app.usercentrics.eu^$important
+||usercentrics.eu^$important
+
+
+! ============================================================
+! Ad Tech / Video Ad Delivery
+! ============================================================
+
+||mssl.fwmrm.net^$important
+||fwmrm.net^$important
+||ssl.p.jwpcdn.com^$important
+||jwpcdn.com^$important
+||imasdk.googleapis.com^$important
+||dai.google.com^$important
+||taboola.com^$important
+||connatix.com^$important
+||business-api-tiktok-com-apix.bytewlb.akadns.net^$important
+||e35058.a.akamaiedge.net^$important
+||udc-ats.media.g03.yahoodns.net^$important
+
+
+! ============================================================
+! Analytics / Error Reporting / Optimization
+! ============================================================
+
+||elasticbeanstalk.com^$important
+||sentry.io^$important
+||braze-images.com^$important
+||braze.com^$important
+||intercom.io^$important
+||cdn.dynamicyield.com^$important
+||dynamicyield.com^$important
+||adobedtm.com^$important
+||sstats.adobe.com^$important
+||adobe.com.ssl.d1.sc.omtrdc.net^$important
+||analytics.microsoft.com^$important
+||lotame.com^$important
+||optimizely.com^$important
+||quantcast.com^$important
+||inmobi.com^$important
+||track.cj.akadns.net^$important
+
+
+! ============================================================
+! High-Breakage Rules to Review if Websites Misbehave
+! ============================================================
+
+! These are not active rules. They are reminders of broad rules already used above.
+! If shopping, login, checkout, video, or app behavior breaks, search for these first.
+
+! Broad Amazon media block:
+! ||m.media-amazon.com^$important
+
+! Broad shopping/platform block:
+! ||shopify.com^$important
+
+! Broad cloud/app-hosting block:
+! ||elasticbeanstalk.com^$important
+
+! Broad social platform blocks:
+! ||facebook.com^$important
+! ||instagram.com^$important
+
+! Broad video/ad SDK blocks that may affect streaming playback:
+! ||imasdk.googleapis.com^$important
+! ||dai.google.com^$important
+! ||jwpcdn.com^$important
