@@ -181,6 +181,7 @@
 
 ||elasticbeanstalk.com^$important
 ||sentry.io^$important
+||braze-images.com^$important
 ||braze.com^$important
 ||intercom.io^$important
 ||cdn.dynamicyield.com^$important
