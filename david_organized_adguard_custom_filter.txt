@@ -9,7 +9,6 @@
 
 ! Alexa Blocking Rules for Echo Show
 ||m.media-amazon.com^$client='Echo Show'
-!||amc.amazon.dev^$client='Echo Show'
 ||advertising.amazon.dev^$client='Echo Show'
 ||juno.alexa.amazon.dev^$client='Echo Show'
 
@@ -182,7 +181,6 @@
 
 ||elasticbeanstalk.com^$important
 ||sentry.io^$important
-||braze-images.com^$important
 ||braze.com^$important
 ||intercom.io^$important
 ||cdn.dynamicyield.com^$important
