@@ -8,8 +8,7 @@
 ! ============================================================
 
 ! Alexa / Amazon rules originally scoped to Echo Show, now applied globally.
-||m.media-amazon.com^$important
-!||amc.amazon.dev^$important
+||m.media-amazon.com^$client='Echo Show'
 ||advertising.amazon.dev^$important
 ||juno.alexa.amazon.dev^$important
 
