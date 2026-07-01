@@ -15,7 +15,7 @@
 ! Amazon / Alexa Core Blocks
 ||minerva.devices.a2z.com^$important
 ||msh.amazon.com^$important
-||softwareupdates.amazon.com^$important
+!||softwareupdates.amazon.com^$important
 
 
 ! ============================================================
