@@ -1,21 +1,21 @@
-! Title: David's Organized DNS-Wide Custom Filter List
-! Description: Non-device-specific version of David's organized custom DNS filtering rules.
+! Title: David's Organized AdGuard Custom Filter List
+! Description: Cleaned and grouped custom DNS filtering rules for AdGuard / AdGuard Home.
 ! Last updated: 2026-06-19
-! Notes: Device-specific $client rules were converted to global $important rules for DNS servers that do not support per-client filtering.
+! Notes: Grouped by operational purpose for easier troubleshooting and maintenance.
 
 ! ============================================================
-! Device Rules Converted to Global Blocks
+! Device-Specific Rules
 ! ============================================================
 
-! Alexa / Amazon rules originally scoped to Echo Show, now applied globally.
+! Alexa Blocking Rules for Echo Show
 ||m.media-amazon.com^$client='Echo Show'
-||advertising.amazon.dev^$important
-||juno.alexa.amazon.dev^$important
+||advertising.amazon.dev^$client='Echo Show'
+||juno.alexa.amazon.dev^$client='Echo Show'
 
 ! Amazon / Alexa Core Blocks
 ||minerva.devices.a2z.com^$important
 ||msh.amazon.com^$important
-||softwareupdates.amazon.com^$important
+!||softwareupdates.amazon.com^$important
 
 
 ! ============================================================
@@ -203,9 +203,6 @@
 
 ! These are not active rules. They are reminders of broad rules already used above.
 ! If shopping, login, checkout, video, or app behavior breaks, search for these first.
-
-! Broad Amazon media block:
-! ||m.media-amazon.com^$important
 
 ! Broad shopping/platform block:
 ! ||shopify.com^$important
