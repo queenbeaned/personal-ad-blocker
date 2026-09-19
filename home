@@ -8,13 +8,13 @@
 ! ============================================================
 
 ! Alexa Blocking Rules for Echo Show
-||m.media-amazon.com^$client='Echo Show'
+!||m.media-amazon.com^$client='Echo Show'
 ||advertising.amazon.dev^$client='Echo Show'
 ||juno.alexa.amazon.dev^$client='Echo Show'
 
 ! Amazon / Alexa Core Blocks
 ||minerva.devices.a2z.com^$important
-||msh.amazon.com^$important
+!||msh.amazon.com^$important
 !||softwareupdates.amazon.com^$important
 
 
