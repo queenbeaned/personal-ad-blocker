@@ -129,7 +129,6 @@
 ||udc.yahoo.com^$important
 ||s.youtube.com^$important
 ||redirector.googlevideo.com^$important
-||xp.apple.com^$important
 ||ngfts.lge.com^$important
 ||cmp.inmobi.com^$important
 ||cmp.osano.com^$important
