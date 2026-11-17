@@ -121,6 +121,8 @@
 ||braze-images.com^$important
 ||2giga.link^$important
 ||clients2.google.com^$important
+||clients1.google.com^$important
+||clients.l.google.com^$important
 @@||alexa-hybrid-interaction-log-config-prod-na.s3.amazonaws.com^$important
 @@||fls-na.amazon.com^$important
 @@||d21m0ezw6fosyw.cloudfront.net^$important
